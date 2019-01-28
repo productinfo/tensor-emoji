@@ -1,0 +1,37 @@
+{
+  "name": "tensor-emoji",
+  "version": "1.0.0",
+  "description": "This runs at [webpro.github.io/tensor-emoji](https://webpro.github.io/tensor-emoji)",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.2.0"
+  },
+  "devDependencies": {
+    "@tensorflow-models/posenet": "^0.2.3",
+    "@tensorflow/tfjs": "^0.14.2",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "gh-pages": "^2.0.1",
+    "parcel-bundler": "^1.11.0",
+    "typescript": "^3.2.4"
+  },
+  "scripts": {
+    "dev": "parcel watch src/index.html",
+    "start": "parcel serve src/index.html",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url .",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpro/tensor-emoji.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webpro/tensor-emoji/issues"
+  },
+  "homepage": "https://github.com/webpro/tensor-emoji#readme"
+}
